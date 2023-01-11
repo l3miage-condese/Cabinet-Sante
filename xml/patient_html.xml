@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/XML/XMLDocument.xml to edit this template
+-->
+
+
+
+<ns1:patient
+    xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xmlns:ns1='http://www.ujf-grenoble.fr/l3miage/medical'
+    xsi:schemaLocation='http://www.ujf-grenoble.fr/l3miage/medical ../xsd/patient.xsd'>
+    <ns1:nom>Pourferlavésel</ns1:nom>
+    <ns1:prénom>Vladimir</ns1:prénom>
+    <ns1:sexe>M</ns1:sexe>
+    <ns1:naissance>1942-12-30</ns1:naissance>
+    <ns1:numéroSS>198082205545842</ns1:numéroSS>
+    <ns1:adresse>
+        <ns1:rue>Les morets</ns1:rue>
+        <ns1:ville>Méaudre</ns1:ville>
+        <ns1:codePostal>38112</ns1:codePostal>
+    </ns1:adresse>
+    <ns1:visite date="2017-12-11">
+        <ns1:intervenant>
+            <ns1:nom>Fréchie</ns1:nom>
+            <ns1:prénom>Sarah</ns1:prénom>
+        </ns1:intervenant>
+        <ns1:acte>Ablation de fils ou d'agrafes, plus de dix, y compris le pansement éventuel.</ns1:acte>
+    </ns1:visite>
+    <ns1:visite date="2017-12-08">
+        <ns1:intervenant>
+            <ns1:nom>Fréchie</ns1:nom>
+            <ns1:prénom>Sarah</ns1:prénom>
+        </ns1:intervenant>
+        <ns1:acte>Séance hebdomadaire de surveillance clinique infirmière et de prévention par séance d'une demi-heure.</ns1:acte>
+    </ns1:visite>
+   
+</ns1:patient>
+

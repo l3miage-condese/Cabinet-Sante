@@ -1,0 +1,162 @@
+<html xmlns:act="http://www.ujf-grenoble.fr/l3miage/actes" xmlns:xh="http://www.w3.org/1999/xhtml" xmlns:cab="http://www.ujf-grenoble.fr/l3miage/medical">
+    <head>
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Fiche infirmier</title>
+        <link rel="stylesheet" type="text/css" href="../css/InfirmierPage.css">
+        <script type="text/javascript" src="../js/facture.js"></script><script type="text/javascript"> 
+                    
+                        function openFacture(prenom, nom, actes) {
+                            var width  = 500;
+                            var height = 300;
+                            if(window.innerWidth) {
+                                var left = (window.innerWidth-width)/2;
+                                var top = (window.innerHeight-height)/2;
+                            }
+                            else {
+                            var left = (document.body.clientWidth-width)/2;
+                            var top = (document.body.clientHeight-height)/2;
+                            }
+                            var factureWindow = window.open(",'facture','menubar=yes, scrollbars=yes, top='+top+', left='+left+', width='+width+', height='+height+");
+                            
+                            var factureText = "Facture pour : " + prenom + " " + nom;
+                            factureWindow.document.write(factureText);
+
+                        }        
+                   
+                </script>
+    </head>
+    <body>
+        <h1> Page d'accueil </h1>
+        <div class="page">
+            <div class="infirmier">
+                <div class="image">
+                    <img src="../css/photos/sarahh.jpg" alt="Smiley face" width="120" height="120">
+                </div>
+                <div class="imagecabinet">
+                    <img src="../css/photos/logo_infirmier.png" alt="Smiley face" width="180" height="100">
+                </div>
+                <div class="presentation">
+                                        Bonjour <strong>Sarah</strong>,
+                    
+                    <br>
+                    <br>
+                                        Aujourd'hui vous avez 4 patients.
+                
+                </div>
+            </div>
+            <div class="patient">
+                <h2> Informations de vos patients</h2>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nom</th><th>Adresse</th><th>Date</th><th>Soins</th><th>Facture</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span>Al&eacute;ocole</span></td><td>6
+                        i&egrave;me Etage
+                    
+                            <br>
+                            <br>
+                            <span>50</span><span>avenue F&eacute;lix Viallet</span>
+                            <br>
+                            <span>38031</span><span>Grenoble</span></td><td>2015-12-08
+                            <br>
+                        </td><td>
+            Injection sous-cutan&eacute;e.
+        
+                            <br>
+                        </td><td><button onclick="
+                        openFacture('Yvon',
+                                    'Al&eacute;ocole',
+                                    '')
+                        ">
+                        Facture
+                    </button>
+                            <br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><span>Orouge</span></td><td>
+                            <br>
+                            <br>
+                            <span></span><span>Rond-Point de la Croix de vie</span>
+                            <br>
+                            <span>38700</span><span>La Tronche</span></td><td>2015-12-08
+                            <br>
+                        </td><td>
+            Pansement de br&ucirc;lure &eacute;tendue ou de plaie chimique ou thermique &eacute;tendue,
+            sur une surface sup&eacute;rieure &agrave; 5% de la surface corporelle.
+        
+                            <br>
+                        </td><td><button onclick="
+                        openFacture('Elvire',
+                                    'Orouge',
+                                    '')
+                        ">
+                        Facture
+                    </button>
+                            <br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><span>Pien</span></td><td>
+                            <br>
+                            <br>
+                            <span></span><span>rue Casimir Brenier</span>
+                            <br>
+                            <span>38000</span><span>Grenoble</span></td><td>2015-12-08
+                            <br>
+                        </td><td> 
+            Pr&eacute;l&egrave;vement par ponction veineuse directe
+        
+                            <br>
+                                        Inection intraveineuse directe isol&eacute;e.
+        
+                            <br>
+                        </td><td><button onclick="
+                        openFacture('Oscare',
+                                    'Pien',
+                                    '')
+                        ">
+                        Facture
+                    </button>
+                            <br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><span>Pourferlav&eacute;sel</span></td><td>
+                            <br>
+                            <br>
+                            <span></span><span>Les morets</span>
+                            <br>
+                            <span>38112</span><span>M&eacute;audre</span></td><td>2017-12-11
+                            <br>
+                            2017-12-08
+                            <br>
+                        </td><td>
+            Ablation de fils ou d'agrafes, plus de dix, y compris le pansement 
+            &eacute;ventuel.
+        
+                            <br>
+                                        S&eacute;ance hebdomadaire de surveillance clinique infirmi&egrave;re et de pr&eacute;vention 
+            par s&eacute;ance d'une demi-heure.
+        
+                            <br>
+                        </td><td><button onclick="
+                        openFacture('Vladimir',
+                                    'Pourferlav&eacute;sel',
+                                    '')
+                        ">
+                        Facture
+                    </button>
+                            <br>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>
